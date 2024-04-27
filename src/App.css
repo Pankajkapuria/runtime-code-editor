@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #4e4f52;
+  background-color: #eaeced !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  background-color: #131313;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
+.homepage {
+  width: 33vmax;
+  border-radius: 10px;
+  color: rgb(232, 228, 228);
+  max-width: 90%;
+  padding: 10px;
+  background-color: rgb(94 86 86 / 66%);
+}
+
+.logo {
+  font-size: larger;
+  text-align: start;
+}
+
+.aside {
+  background-color: #131313f6;
+  width: 15%;
   min-height: 100vh;
+  color: #d5d6d7;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 99vh;
+}
+
+.asideup {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.copybtn {
+  background-color: white;
+  color: #131313eb;
+  font-weight: 800 !important;
+}
+
+.Leavebtn {
+  color: #131313eb;
+  font-weight: 800 !important;
+}
+
+
+
+.contentList {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.edtior {
+  width: 85%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+audio {
+  width: 0px;
+  height: 0px;
+}
+
+.mutebtn {
+  border: 1px solid #aa4a4a;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px #aa4a4a;
+  background: #5c5f62;
+  width: 70px;
+}
+
+.DeviceSuppoart {
+  display: none;
+}
+
+@media only screen and (max-width:1000px) {
+  .DeviceSuppoart {
+    display: block;
+    background-color: rgb(94 86 86 / 66%);
+    color: rgb(232, 228, 228);
+    height: 54%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8vmax;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .homepage {
+    display: none;
   }
 }
