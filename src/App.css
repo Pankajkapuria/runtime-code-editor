@@ -26,6 +26,10 @@ input {
   background-color: rgb(94 86 86 / 66%);
 }
 
+.homepage>input {
+  color: black;
+}
+
 .logo {
   font-size: larger;
   text-align: start;
