@@ -36,6 +36,9 @@ const Edtiorpage = () => {
             transports: ['websocket']
         })
 
+        console.log(process.env.REACT_APP_BACKEND_URL, 'is this')
+
+
         if (params.roomId !== '/') {
             socketRef.current.emit(ACTIONS.JOIN, { roomId: params.roomId, userId: location.state.userId, username: location.state.username })
         }
