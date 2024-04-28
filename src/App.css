@@ -107,6 +107,6 @@ audio {
   }
 
   .homepage {
-    display: none;
+    display: none !important;
   }
 }
